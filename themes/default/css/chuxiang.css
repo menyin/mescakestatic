@@ -1,0 +1,101 @@
+body {
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.head-area{
+    position: fixed;
+}
+.wrap {
+    width: 100%;
+    height:auto;
+    margin:0 auto;
+    background-color: #e7e8e7;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+.clear {
+    clear: both;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.header {
+    margin-bottom:30px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.pro-item{
+    width: 100%;
+    margin: 10px auto;
+    background-color: #312927;
+}
+
+.pro-item .img img {
+    width: 100%;
+}
+
+.pro-item .descript{
+    color: #ffffff;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+.descript .left {
+    width:35%;
+    float: left;
+}
+
+.descript .name {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.descript .price {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.descript .right {
+    width:65%;
+    height:100%;
+    float: right;
+    margin-bootom:30px;
+}
+
+.right .buy-cart{
+    text-align: right;
+    margin-top:90px;
+}
+
+.right .buy-cart a{
+    display: inline-block;
+}
+.right .buy-cart a.buy{
+    width: 40%;
+}
+
+.right .buy-cart a.cart {
+    width: 46%;
+    margin-left: 20px;
+}
+
+.right .buy-cart a.cart img,
+.right .buy-cart a.buy img{
+    width: 100%;
+}
+
+.bottom-logo{
+    width:100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+.bottom-logo img {
+    width: 30%;
+}

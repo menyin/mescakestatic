@@ -1,0 +1,186 @@
+body{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    background-color:#efefef;
+    margin: 0 auto;
+}
+.scroll-area ul li{float: left; width: 72px; height: 156px; margin-right: 1px;
+    background: rgba(0,0,0,.8); font-size: 12px; color: #fff;}
+.scroll-area ul{width: 366px;}
+
+.container{
+    position: fixed;
+    left: 0;
+    bottom: 35px; width: 100%; height: 156px;
+    z-index: 4;
+    -webkit-animation: fadeLeft 0.8s .6s linear both;
+    -moz-animation: fadeLeft 0.8s .6s linear both;
+    -ms-animation: fadeLeft 0.8s .6s linear both;
+    animation: fadeLeft 0.8s .6s linear both;}
+
+.scroll-area{height: 156px;}
+
+.bg-img-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url(../img/big-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.sa-item{text-align: center;}
+.sa-item .title{padding-top: 10px; font-size: 14px;}
+.sa-item .line{width: 50px; margin: 0 auto; height: 0; margin-top: 12px; overflow: hidden; border-bottom: 1px solid #5e5a58;}
+.sa-item .ico{height: 21px; display: block; margin: 10px auto 16px;}
+
+.sa-item .intro{font-size: 10px;}
+
+
+.img-loaded img{display: block; width: 100% !important; height: 100% !important;}
+
+
+/* iphone6 */
+@media screen and (min-width: 340px){
+    .scroll-area ul li{width: 80px;}
+    .scroll-area ul{width: 495px;}
+}
+@media screen and (min-width: 400px){
+    .scroll-area ul li{width: 90px;}
+    .scroll-area ul{width: 555px;}
+    .sa-item .intro{font-size: 14px;}
+    .container{bottom: 60px;}
+}
+
+
+/* 产品详细 */
+.buy-btn-area{padding: 15px 20px; border-top: 1px solid #a7a7a7; background: #fafafa; position: fixed; width: 100%;
+    box-sizing:border-box; bottom: 0; left: 0;}
+.add-num-area{font-size:0; padding-top: 6px;}
+.minus-ico,
+.plus-ico{display: inline-block; width: 20px; height: 20px; line-height: 20px; border: 1px solid #3f3939;
+    background: #594443; text-align: center; font-size: 14px; color: #fff; font-style: normal;}
+.buy-btn-area .num-enter{width: 40px; height: 20px; line-height: 20px; border: 1px solid #3f3939; background: #fff;
+    text-align: center; font-size: 14px; font-weight: bold; color: #594443; display: inline-block;}
+
+.btn{font-size: 16px; height: 33px; line-height: 33px; border: 1px solid #3f3939;
+    background: #594443; padding: 0 10px; color: #fff; border-radius: 4px; display: inline-block;}
+
+.pro-area .pro-img{display: block; width: 100%;}
+.pro-area .intro-area{padding: 10px 20px 25px; color: #3f3a39;}
+.pro-area .intro-area .title{font-size: 14px; margin-bottom: 10px;}
+.pro-area .intro-area .tip{font-size: 10px; padding-top: 4px;}
+.pro-area .intro-area .num{font-size: 16px; font-weight: bold;}
+
+@media screen and (max-width: 320px){
+    .buy-btn-area{padding: 10px;}
+    .btn{font-size: 14px;}
+}
+
+
+/* 分类产品列表页 */
+.main-area{padding: 12px 8px;}
+.has-bor-img{display: block; width: 100%; border: 1px solid #d0d0d0; box-sizing:border-box;}
+.foo-banner-area img{display: block; margin:0 auto; margin-bottom: 8px;}
+.footer-logo-area{padding: 45px 0; text-align: center;}
+.footer-logo-area img{width: 100px; display: inline-block;}
+
+.pro-list-area{padding: 12px 0 16px;}
+.pro-list-area .item{ width: 49%; color: #373737;
+    border: 1px solid #d0d0d0; background: #fff; padding: 6px 6px 10px;
+    box-sizing:border-box; margin-bottom: 8px;}
+.pro-list-area .item img{display: block; width: 100%; margin-bottom: 8px;}
+.pro-list-area .item .name{color: #373737; line-height: 1.5; display: block; height: 30px; font-size: 12px; /**margin-bottom: 12px;**/}
+.pro-list-area .item .price{font-weight: bold;font-size: 14px; padding-top: 2px;}
+
+.pro-list-area .item .item-tag-xiajia:before{
+    content:"已下架";
+    color:#fffef8;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-weight:bold;
+    display: block;
+}
+
+.pro-list-area .item .item-tag-xiajia{
+    height:60%;
+    width:60%;
+    opacity: 0.7;
+    border-radius: 60%;
+    background-color:#666666;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.add-to-car-ico{width: 24px; height: 20px; background: url(../img/tab/car-add-ico.png) 0 0 no-repeat;
+    background-size: 24px 20px;}
+.add-btn{font-size: 0.8rem;padding:3px 5px;background-color: #d11c08;color:#fff;font-style: normal;cursor: pointer;}
+
+/* 轮播图 */
+.main-banner {
+    margin-top: 12px;
+    position: relative;
+    clear: both;
+    border: 1px solid #d0d0d0;
+}
+.swipe {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+.swipe .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.swipe .swipe-wrap li {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.swipe .swipe-wrap li img{width: 100%; display: block;}
+
+.swipe .position {
+    bottom: 14px;
+    font-size: 0;
+    height: 9px;
+    left: 0;
+    line-height: 0;
+    position: absolute;
+    text-align: center;
+    z-index: 9;
+    width: 100%;
+}
+.swipe .position a {
+    border: 1px solid #594443;
+    border-radius: 5px;
+    display: inline-block;
+    height: 8px;
+    margin: 0 7px;
+    width: 8px;
+}
+.swipe .position a.on{background: #594443;}
+
+/* 底部固定栏 */
+.main-bottom-nav{position: fixed; z-index: 10; bottom: 0; left: 0; width: 100%; background: #efefef; padding-top: 8px;}
+.main-bottom-nav .inner{ position: relative;
+    border-top: 1px solid #a7a7a7; border-bottom: 1px solid #a7a7a7; font-size: 14px;
+    height: 38px; line-height: 38px;}
+.main-bottom-nav .list li{float: left; width: 20%; background: #fafafa; box-shadow: inset 0 0 1px #fff;}
+.main-bottom-nav .list li.big{width: 40%; box-sizing:border-box; border-left: 1px solid #a7a7a7; border-right: 1px solid #a7a7a7;}
+.main-bottom-nav .list li.border{box-sizing:border-box; border-right: 1px solid #a7a7a7;}
+.main-bottom-nav .list li a{display: block; width: 100%; height: 38px; color: #594443; text-align: center;}
+.main-bottom-nav .ico{display: inline-block; height: 18px; vertical-align: middle;}
+.main-bottom-nav .corner{display: inline-block; width: 8px; margin:4px 0 0 4px; vertical-align: -5px;}
+
+.more-area{border: 1px solid #a7a7a7; border-bottom: 0 none; overflow: hidden; position: absolute; bottom: 32px; left: 22%; }
+.more-area li{border-bottom: 1px solid #a7a7a7; height: 30px; line-height: 30px; width: 100px; background: #fff;}
+.more-area li a{display: block; height: 100%; text-align: center; color: #594443; font-size: 14px; text-align: center;}
